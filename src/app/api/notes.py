@@ -26,6 +26,22 @@ async def read_note(id: int):
     return note
 
 
-@router.get("/", response_model=List[NoteDB])
+@router.get('/', response_model=List[NoteDB])
 async def read_all_notes():
     return await crud.get_all()
+
+
+@router.put('/{id}/', response_model=NoteDB)
+async def update_note(id: int, payload: NoteSchema):
+    note = await crud.put(id, payload)
+    if not note:
+        raise HTTPException(status_code=404, detail="Note not found")
+
+    note_id = await crud.put(id, payload)
+
+    response_object = {
+        "id": note_id,
+        "title": payload.title,
+        "description": payload.description
+    }
+    return response_object
