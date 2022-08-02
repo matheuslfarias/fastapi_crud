@@ -19,5 +19,5 @@ cd fastapi_crud
 ```
 You have to install docker and docker-compose, then
 ´´´bash
-$ docker-compose up -d --build
+docker-compose up -d --build
 ´´´
