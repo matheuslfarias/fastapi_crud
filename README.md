@@ -28,6 +28,6 @@ docker-compose exec web pytest
 
 ```
 Test out the following routes:
-1. [http://localhost:8002/ping](http://localhost:8003/ping)
-2. [http://localhost:8002/docs](http://localhost:8003/docs)
-3. [http://localhost:8002/notes](http://localhost:8003/notes)
+1. [http://localhost:8002/ping](http://localhost:8002/ping)
+2. [http://localhost:8002/docs](http://localhost:8002/docs)
+3. [http://localhost:8002/notes](http://localhost:8002/notes)
