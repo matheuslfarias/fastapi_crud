@@ -22,3 +22,8 @@ You have to install docker and docker-compose, then
 docker-compose up -d --build
 
 ```
+and finally do the tests:.
+```bash
+docker-compose exec web pytest
+
+```
