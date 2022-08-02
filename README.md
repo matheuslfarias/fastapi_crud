@@ -1,5 +1,5 @@
 # FastAPI Project Example
-In this tutorial, we covered how to develop and test an asynchronous API with FastAPI, Postgres, pytest, and Docker using Test-driven Development.
+Basic template to develop and test an asynchronous API with FastAPI, Postgres, pytest, and Docker using Test-driven Development.
 
 See also
 
